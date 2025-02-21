@@ -7,7 +7,8 @@ const app = express()
 app.use(express.json())
 let teaData = []
 let nextId = 1
-const port = process.env.PORT
+const port = process.env.PORT || 3000;
+
 
 //save the tea in manu
 app.post('/teas',(req,res)=>{
