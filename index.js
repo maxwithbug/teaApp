@@ -1,10 +1,13 @@
+import 'dotenv/config'
 import express from 'express'
 
+
+
 const app = express()
-const port = 3100
 app.use(express.json())
 let teaData = []
 let nextId = 1
+const port = process.env.PORT
 
 //save the tea in manu
 app.post('/teas',(req,res)=>{
