@@ -72,5 +72,5 @@ app.get('/ice-tea',(req,res)=>{
 
 //starting server
 app.listen(port ,()=>{
-    console.log(`server running on ${port}`)
+    console.log(`server running....`)
 })
